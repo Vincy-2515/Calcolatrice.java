@@ -1,7 +1,9 @@
 <!-- omit from toc -->
 # Calcolatrice.java
 
-<img alt="Calcolatrice.gif" src="src/res/Calcolatrice.gif" align="center" style="height: 241px; width: 191px;">
+<div align="center">
+    <img alt="Calcolatrice.gif" src="src/res/Calcolatrice.gif" style="height: 241px; width: 191px;">
+</div>
 
 Questa è una semplice calcolatrice sviluppata in Java con NetBeans e offre le basilari funzioni per eseguire semplici calcoli.
 
