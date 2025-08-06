@@ -327,8 +327,8 @@ public class Calcolatrice extends javax.swing.JFrame {
 
         jMenu1.setText("File");
 
-        saveHistoryMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_MASK));
-        saveHistoryMenuItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/history.png"))); // NOI18N
+        saveHistoryMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        saveHistoryMenuItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/res/history.png"))); // NOI18N
         saveHistoryMenuItem.setText("Salva...");
         saveHistoryMenuItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -338,8 +338,8 @@ public class Calcolatrice extends javax.swing.JFrame {
         jMenu1.add(saveHistoryMenuItem);
         jMenu1.add(jSeparator1);
 
-        exitMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F4, java.awt.event.InputEvent.ALT_MASK));
-        exitMenuItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/exit.png"))); // NOI18N
+        exitMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F4, java.awt.event.InputEvent.ALT_DOWN_MASK));
+        exitMenuItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/res/exit.png"))); // NOI18N
         exitMenuItem.setText("Esci");
         exitMenuItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -352,8 +352,8 @@ public class Calcolatrice extends javax.swing.JFrame {
 
         jMenu2.setText("Altro");
 
-        infoMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_I, java.awt.event.InputEvent.CTRL_MASK));
-        infoMenuItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/info.png"))); // NOI18N
+        infoMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_I, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        infoMenuItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/res/info.png"))); // NOI18N
         infoMenuItem.setText("Info");
         infoMenuItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

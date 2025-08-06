@@ -106,7 +106,7 @@
                   <KeyStroke key="Ctrl+S"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/history.png"/>
+                  <Image iconType="3" name="/res/history.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Salva..."/>
               </Properties>
@@ -122,7 +122,7 @@
                   <KeyStroke key="Alt+F4"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/exit.png"/>
+                  <Image iconType="3" name="/res/exit.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Esci"/>
               </Properties>
@@ -143,7 +143,7 @@
                   <KeyStroke key="Ctrl+I"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/info.png"/>
+                  <Image iconType="3" name="/res/info.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Info"/>
               </Properties>
