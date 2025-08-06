@@ -8,7 +8,7 @@ L'interfaccia grafica è molto intuitiva, ben organizzata e semplice da usare, o
 Dietro l'interfaccia grafica scritta in Java Swing risiede una robusta codebase che gestisce tutte le eccezioni del caso, offrendo massima affidabilità e correttezza dei risultati. 
 
 <div align="center">
-    <img alt="Calcolatrice.gif" src="src/res/Calcolatrice.gif" style="height: 241px; width: 191px;">
+    <img alt="Calcolatrice.gif" src="src/res/Calcolatrice.gif">
 </div>
 
 <!-- omit from toc -->
