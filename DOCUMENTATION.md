@@ -12,18 +12,18 @@
 - **_Descrizione_**: Si occupa di _appendere_ o meglio dire aggiungere il carattere specificato al campo di testo principale.
 
 - **_Parametri_**: 
-    | Parametro | Descrizione           |
-    | --------- | --------------------- |
-    | character | carattere da inserire |
+    | Parametro | Descrizione             |
+    | --------- | ----------------------- |
+    | character | carattere da aggiungere |
 
 - **Ritorna**: nulla
 
 ### private void calculateAndUpdateTextFields(int result_destination, String key_pressed_operator)
 - **_Descrizione_**: Gestisce i campi di testo e la cronologia, nello specifico si occupa di: 
   - _spostare_ i valori dal campo di testo principale a quello secondario;
-  - avviare calcoli
-  - mostrare i valori correttamente nei campi di testo (con tanto di parentesi, se necessarie)
-  - salvare in cronologia l'ultimo calcolo, se effettuato
+  - avviare calcoli;
+  - mostrare i valori correttamente nei campi di testo (con tanto di parentesi, se necessarie);
+  - salvare in cronologia l'ultimo calcolo, se effettuato.
 
 - **_Parametri_**: 
     | Parametro                   | Descrizione                                                                                            |
