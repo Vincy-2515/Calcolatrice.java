@@ -1,4 +1,3 @@
-<!-- omit from toc -->
 # Calcolatrice.java
 
 Questa è una semplice calcolatrice sviluppata in Java con NetBeans e offre le basilari funzioni per eseguire semplici calcoli.
@@ -10,12 +9,6 @@ Dietro l'interfaccia grafica scritta in Java Swing risiede una robusta codebase 
 <div align="center">
     <img alt="Calcolatrice.gif" src="src/res/Calcolatrice.gif">
 </div>
-
-<!-- omit from toc -->
-## Tabella dei contenuti
-- [Installazione](#installazione)
-- [Funzionalità](#funzionalità)
-- [Documentazione](#documentazione)
 
 ## Installazione
 
