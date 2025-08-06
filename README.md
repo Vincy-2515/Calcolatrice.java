@@ -1,22 +1,13 @@
 <!-- omit from toc -->
 # Calcolatrice.java
 
+<img alt="Calcolatrice.gif" src="src/res/Calcolatrice.gif" align="center" style="height: 241px; width: 191px;">
 
-<div style="display: flex; align-items: flex-start;">
-    <img alt="Calcolatrice.gif" src="src/res/Calcolatrice.gif" style="height: 241px; width: 191px; margin-right: 20px;">
+Questa è una semplice calcolatrice sviluppata in Java con NetBeans e offre le basilari funzioni per eseguire semplici calcoli.
 
-<div>
-    <p>
-        Questa è una semplice calcolatrice sviluppata in Java con NetBeans e offre le basilari funzioni per eseguire semplici calcoli.
-    </p>
-    <p>
-        L'interfaccia grafica è molto intuitiva, ben organizzata e semplice da usare, oltre alle classiche funzioni, questa calcolatrice offre inoltre la possibilità di poter salvare in un file di testo esterno la cronologia dei calcoli effettuati.
-    </p>
-    <p>
-        Dietro l'interfaccia grafica scritta in Java Swing risiede una robusta codebase che gestisce tutte le eccezioni del caso, offrendo massima affidabilità e correttezza dei risultati. 
-    </p>
-</div>
-</div>
+L'interfaccia grafica è molto intuitiva, ben organizzata e semplice da usare, oltre alle classiche funzioni, questa calcolatrice offre inoltre la possibilità di poter salvare in un file di testo esterno la cronologia dei calcoli effettuati.
+
+Dietro l'interfaccia grafica scritta in Java Swing risiede una robusta codebase che gestisce tutte le eccezioni del caso, offrendo massima affidabilità e correttezza dei risultati. 
 
 
 <!-- omit from toc -->
