@@ -5,12 +5,12 @@
 public class MiddleOperator {
     public String middle_operator;
     public int middle_operator_position;
-    
-    public MiddleOperator (String str) {
-        getOperator(str);
+
+    public MiddleOperator(String str) {
+        setOperator(str);
     }
-    
-    private void getOperator(String str) {
+
+    private void setOperator(String str) {
         int i;
         String operators[] = new String[5];
         operators[0] = "+";
@@ -18,15 +18,17 @@ public class MiddleOperator {
         operators[2] = "*";
         operators[3] = "÷";
         operators[4] = "%";
-        
+
         i = 0;
         do {
             this.middle_operator = operators[i];
-            this.middle_operator_position = str.indexOf(operators[i], 1);
+            this.middle_operator_position = str.indexOf(operators[i], 1); // a partire dall'indice 1 perche l'indice
+                                                                          // zero potrebbe essere un segno relativo ad
+                                                                          // un valore
             i++;
-        } while(!isOperator() || this.middle_operator_position == -1);
+        } while (!isOperator() || this.middle_operator_position == -1);
     }
-    
+
     private Boolean isOperator() {
         switch (this.middle_operator) {
             case "+":
