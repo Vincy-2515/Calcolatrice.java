@@ -32,7 +32,7 @@ File principale contenente tutto il codice riferito all'interfaccia della calcol
 | History History     | oggetto che si occupa della gestione della cronologia                                                                                 |
 
 > [!IMPORTANT]
-> Alcune funzioni presenti in questo file sono generate automaticamente da Netbeans e quindi il codice è in continua variazione
+> Alcune funzioni presenti in "Calcolatrice.java" sono generate automaticamente da Netbeans e quindi il codice è in continua variazione
 
 > [!NOTE]
 > Tutte le funzioni che terminano con `...ActionPerformed()` sono degli handler per vari tasti e funzioni dell'interfaccia 

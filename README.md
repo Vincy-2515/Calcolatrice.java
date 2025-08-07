@@ -32,4 +32,4 @@ Oltre le funzioni base di una normalissima calcolatrice, questa permette inoltre
 
 ## Documentazione 
 
-E' possibile consultare la documentazione del codice sorgente della calcolatrice nell'apposito [file dedicato](DOCUMENTATION.md)
+E' possibile consultare la documentazione del codice sorgente della calcolatrice nell'apposito [file dedicato](DOCUMENTATION.md).
