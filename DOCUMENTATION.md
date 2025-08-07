@@ -17,7 +17,7 @@
 - [**Results.java**](#resultsjava)
   - [`public Results(Double textField1_value, Double textField2_value, MiddleOperator OP, Double result)`](#public-resultsdouble-textfield1_value-double-textfield2_value-middleoperator-op-double-result)
 - [**MiddleOperator.java**](#middleoperatorjava)
-  - [`COSTRUTTORE()`](#costruttore)
+  - [`public MiddleOperator(String str)`](#public-middleoperatorstring-str)
   - [`private void setOperator(String str)`](#private-void-setoperatorstring-str)
   - [`Boolean isOperator()`](#boolean-isoperator)
 - [**History.java**](#historyjava)
@@ -189,7 +189,7 @@ Classe che si occupa di gestire l'operatore selezionato dall'utente per l'operaz
 | String middle_operator       | contiene l'operatore selezionato dall'utente per l'operazione seguente |
 | int middle_operator_position | contiene l'indice della posizione dell'operatore nella stringa data    |
 
-### `COSTRUTTORE()`
+### `public MiddleOperator(String str)`
 - **_Descrizione_**: Costruttore che prende in input una stringa per poi passarla al metodo che si occuperà di estrarre l'operatore da essa.
 
 - **_Parametri_**: 
