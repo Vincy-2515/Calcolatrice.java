@@ -13,11 +13,15 @@
   - [`private String deParenthesisInator(String str_value)`](#private-string-deparenthesisinatorstring-str_value)
   - [`private double calculate(String operator, double first_value, double second_value)`](#private-double-calculatestring-operator-double-first_value-double-second_value)
 - [**TextFields.java**](#textfieldsjava)
+  - [`public TextFields(String main_display_content, String secondary_display_content)`](#public-textfieldsstring-main_display_content-string-secondary_display_content)
 - [**Results.java**](#resultsjava)
+  - [`public Results(Double textField1_value, Double textField2_value, MiddleOperator OP, Double result)`](#public-resultsdouble-textfield1_value-double-textfield2_value-middleoperator-op-double-result)
 - [**MiddleOperator.java**](#middleoperatorjava)
+  - [`COSTRUTTORE()`](#costruttore)
   - [`private void setOperator(String str)`](#private-void-setoperatorstring-str)
   - [`Boolean isOperator()`](#boolean-isoperator)
 - [**History.java**](#historyjava)
+  - [`public History(String path)`](#public-historystring-path)
   - [`public void saveToBuffer(String record)`](#public-void-savetobufferstring-record)
   - [`public void saveHistoryToFile()`](#public-void-savehistorytofile)
   - [`public void freeResources()`](#public-void-freeresources)
@@ -26,7 +30,7 @@
 
 File principale contenente tutto il codice riferito all'interfaccia della calcolatrice, oltre che a quello di logica che gestisce: calcoli, azioni dei pulsanti e aggiornamento dei campi di testo.
 
-| Parametro           | Descrizione                                                                                                                           |
+| Attributo           | Descrizione                                                                                                                           |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | Boolean after_equal | usato per stabilire se l'operazione corrente sta essendo effettuata dopo che l'utente ha premuto il tasto "uguale" (calcolo ripetuto) |
 | History History     | oggetto che si occupa della gestione della cronologia                                                                                 |
@@ -136,30 +140,65 @@ File principale contenente tutto il codice riferito all'interfaccia della calcol
 
 Classe contenente due attributi che permettono di conservare le stringhe da inserire nei campi di testo.
 
-| Parametro                        | Descrizione                                                                      |
+| Attributo                        | Descrizione                                                                      |
 | -------------------------------- | -------------------------------------------------------------------------------- |
 | String main_display_content      | contiene la stringa da inserire nel campo di testo principale (quello inferiore) |
 | String secondary_display_content | contiene la stringa da inserire nel campo di testo secondario (quello superiore) |
+
+### `public TextFields(String main_display_content, String secondary_display_content)`
+- **_Descrizione_**: Costruttore che inizializza l'oggetto con i parametri forniti.
+
+- **_Parametri_**: 
+    | Parametro                        | Descrizione                                                                      |
+    | -------------------------------- | -------------------------------------------------------------------------------- |
+    | String main_display_content      | contiene la stringa da inserire nel campo di testo principale (quello inferiore) |
+    | String secondary_display_content | contiene la stringa da inserire nel campo di testo secondario (quello superiore) |
+
+- **_Ritorna_**: nulla.
 
 ## [**Results.java**](src/Results.java)
 
 Classe contenente degli attributi che permettono di conservare tutti i parametri necessari per effettuare i calcoli.
 
-| Parametro           | Descrizione                                                            |
+| Attributo           | Descrizione                                                            |
 | ------------------- | ---------------------------------------------------------------------- |
 | String first_value  | primo valore                                                           |
 | String second_value | secondo valore                                                         |
 | MiddleOperator OP   | contiene l'operatore selezionato dall'utente per l'operazione seguente |
 | String result       | risultato dell'operazione                                              |
 
+### `public Results(Double textField1_value, Double textField2_value, MiddleOperator OP, Double result)`
+- **_Descrizione_**: Costruttore che inizializza l'oggetto con i parametri forniti.
+
+- **_Parametri_**: 
+    | Parametro           | Descrizione                                                            |
+    | ------------------- | ---------------------------------------------------------------------- |
+    | String first_value  | primo valore                                                           |
+    | String second_value | secondo valore                                                         |
+    | MiddleOperator OP   | contiene l'operatore selezionato dall'utente per l'operazione seguente |
+    | String result       | risultato dell'operazione                                              |
+
+- **_Ritorna_**: nulla.
+
 ## [**MiddleOperator.java**](src/MiddleOperator.java)
 
 Classe che si occupa di gestire l'operatore selezionato dall'utente per l'operazione seguente.
 
-| Parametro                    | Descrizione                                                            |
+| Attributo                    | Descrizione                                                            |
 | ---------------------------- | ---------------------------------------------------------------------- |
 | String middle_operator       | contiene l'operatore selezionato dall'utente per l'operazione seguente |
 | int middle_operator_position | contiene l'indice della posizione dell'operatore nella stringa data    |
+
+### `COSTRUTTORE()`
+- **_Descrizione_**: Costruttore che prende in input una stringa per poi passarla al metodo che si occuperà di estrarre l'operatore da essa.
+
+- **_Parametri_**: 
+    | Parametro                    | Descrizione                                                            |
+    | ---------------------------- | ---------------------------------------------------------------------- |
+    | String middle_operator       | contiene l'operatore selezionato dall'utente per l'operazione seguente |
+    | int middle_operator_position | contiene l'indice della posizione dell'operatore nella stringa data    |
+
+- **_Ritorna_**: nulla.
 
 ### `private void setOperator(String str)`
 - **_Descrizione_**: Data una stringa contenente l'operatore selezionato dall'utente, questo metodo lo copia in `String middle_operator`.
@@ -182,12 +221,22 @@ Classe che si occupa di gestire l'operatore selezionato dall'utente per l'operaz
 
 Classe che si occupa della gestione della cronologia dei calcoli.
 
-| Parametro                 | Descrizione                                                             |
+| Attributo                 | Descrizione                                                             |
 | ------------------------- | ----------------------------------------------------------------------- |
 | File output_file          | oggetto che fa riferimento al file dove la cronologia sarà salvata      |
 | FileOutputStream out_byte | oggetto che scrive byte sul file                                        |
 | PrintWriter out_line      | oggetto che scrive i calcoli in un buffer per poi passarli a `out_byte` |
 | int current_record_ID     | variabile che incrementa con il numero di calcoli effettuati            |
+
+### `public History(String path)`
+- **_Descrizione_**: Costruttore che prende in input il percorso del file della cronologia che andrà creato, si occupa inoltre di inizializzare tutti gli oggetti necessari per la scrittura su file.
+
+- **_Parametri_**: 
+    | Parametro   | Descrizione                                         |
+    | ----------- | --------------------------------------------------- |
+    | String path | percorso del file della cronologia che andrà creato |
+
+- **_Ritorna_**: nulla.
 
 ### `public void saveToBuffer(String record)`
 - **_Descrizione_**: Permette di salvare sul buffer il calcolo corrente.
