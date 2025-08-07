@@ -5,9 +5,8 @@
     <span>&nbsp;&nbsp;</span>
     <img alt="version - v1.0.0.0" src="https://img.shields.io/badge/Version-v1.0-black?style=for-the-badge">
     <span>&nbsp;&nbsp;</span>
-    <img alt="wiki" src="https://img.shields.io/badge/windows11-tested-black?style=for-the-badge">
+    <img alt="windows11-tested" src="https://img.shields.io/badge/windows11-tested-black?style=for-the-badge">
     <span>&nbsp;&nbsp;</span>
-    <img alt="windows11-tested" src="https://img.shields.io/badge/wiki-black?style=for-the-badge&logo=wikibooks&link=https%3A%2F%2Fgithub.com%2FVincy-2515%2Foption-selector%2Fwiki">
 </p>
 
 Questa è una semplice calcolatrice sviluppata in Java con NetBeans e offre le basilari funzioni per eseguire semplici calcoli.
@@ -33,4 +32,4 @@ Oltre le funzioni base di una normalissima calcolatrice, questa permette inoltre
 
 ## Documentazione 
 
-E' possibile consultare la documentazione del codice sorgente della calcolatrice in [un file separato](DOCUMENTATION.md)
+E' possibile consultare la documentazione del codice sorgente della calcolatrice nell'apposito [file dedicato](DOCUMENTATION.md)
